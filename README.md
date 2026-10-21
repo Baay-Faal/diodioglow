@@ -69,5 +69,5 @@ npx serve .
 ---
 
 <p align="center">
-  <strong>dev by &lt;/Baay_Hacker&gt;</strong>
+  <strong>dev by [</Baay_Hacker>](https://baay-faal.github.io/myportfolio)</strong>
 </p>
