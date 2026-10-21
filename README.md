@@ -1,11 +1,15 @@
-# Maison Diodio Glow Skin — Dakar 🌸✨
+<p align="center">
+  <img src="assets/images/banniere_diodio_16_9.jpg" alt="Maison Diodio Glow Skin Dakar" width="100%" style="border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+</p>
+
+# Maison Diodio Glow Skin — Dakar
 
 > **« Un teint meilleur pour toutes les carnations »**  
 > Plateforme e-commerce & vitrine haute beauté pour la **Maison Diodio Glow Skin**, institut et marque cosmétique de référence à Dakar (Sénégal).
 
 ---
 
-## 🌟 Présentation du Projet
+## Présentation du Projet
 
 La **Maison Diodio Glow Skin** sublime toutes les carnations féminines et masculines à travers 12 gammes dermatologiques complètes et des rituels de beauté formulés avec soin.
 
@@ -18,7 +22,7 @@ Ce projet web haute performance propose une expérience fluide, rapide et mobile
 
 ---
 
-## 💳 Modes de Paiement Intégrés
+## Modes de Paiement Intégrés
 
 * **Wave Mobile Money Sénégal :** Compte certifié *Diodio GLOW Skin* (0% de frais).
 * **Orange Money Sénégal :** Numéro officiel marchand *+221 78 451 09 09*.
@@ -27,7 +31,7 @@ Ce projet web haute performance propose une expérience fluide, rapide et mobile
 
 ---
 
-## 📂 Architecture des Fichiers
+## Architecture des Fichiers
 
 ```text
 ├── index.html          # Page d'accueil officielle & diagnostic des 12 carnations
@@ -46,7 +50,7 @@ Ce projet web haute performance propose une expérience fluide, rapide et mobile
 
 ---
 
-## 🚀 Lancement en Local
+## Lancement en Local
 
 Pour visualiser le site en local :
 ```bash
@@ -57,7 +61,7 @@ npx serve .
 
 ---
 
-## 📍 Contact & Institut
+## Contact & Institut
 * **Adresse :** Ouest-Foire à côté de la station Elton, Dakar, Sénégal
 * **Standard Téléphonique :** +221 33 844 15 15
 * **Commandes WhatsApp Dakar :** +221 78 546 69 69
