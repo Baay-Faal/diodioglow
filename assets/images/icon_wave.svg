@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="waveIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28B8FF"/>
+      <stop offset="100%" stop-color="#0099FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Fond bleu ciel Wave avec bords arrondis -->
+  <rect width="48" height="48" rx="12" fill="url(#waveIconGrad)"/>
+  
+  <!-- Manchot Wave -->
+  <!-- Corps noir -->
+  <path d="M 24 9 C 17 9 14 15 14 23 C 14 31 18 37 25 37 C 31 37 34 33 34 26 C 34 19 30 9 24 9 Z" fill="#1A1D20"/>
+  
+  <!-- Ventre blanc -->
+  <path d="M 24 17 C 20 17 18 21 18 27 C 18 32 21 35 25 35 C 28 35 30 32 30 27 C 30 22 28 17 24 17 Z" fill="#FFFFFF"/>
+  
+  <!-- Œil blanc et pupille -->
+  <circle cx="22" cy="14" r="2.2" fill="#FFFFFF"/>
+  <circle cx="22.5" cy="14" r="1.1" fill="#1A1D20"/>
+
+  <!-- Bec jaune orangé Wave -->
+  <path d="M 27 14 L 35 17 L 27 20 Z" fill="#FFB703"/>
+
+  <!-- Aile / nageoire noire -->
+  <path d="M 17 22 C 15 25 15 29 18 31 C 17 29 17 25 18 22 Z" fill="#0E1012"/>
+</svg>

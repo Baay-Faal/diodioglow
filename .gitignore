@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Scratch & Temporary
+scratch/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace Gérante & Pilotage Commercial — Maison Diodio Glow Skin Dakar</title>
+  <meta name="description" content="Tableau de bord de direction générale de la Maison Diodio Glow Skin. Suivi en temps réel du chiffre d'affaires, des commandes entrantes Wave & Orange Money et des livraisons coursiers Tiak-Tiak.">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Polices Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feuilles de styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="admin-page-body">
+
+  <!-- ==========================================================================
+       BARRE SUPÉRIEURE DE DIRECTION (ADMIN TOP BAR)
+       ========================================================================== -->
+  <header class="admin-header">
+    <div class="admin-header-container">
+      
+      <div class="admin-brand-group">
+        <a href="index.html" class="admin-logo-link" title="Retourner à la boutique publique">
+          <img src="assets/images/logo.jpg" alt="Logo officiel Maison Diodio Glow Skin" width="42" height="42" class="admin-logo-img">
+        </a>
+        <div class="admin-title-wrap">
+          <div class="admin-brand-name">Diodio <span>Glow Skin</span></div>
+          <div class="admin-badge-role">
+            <span class="pulse-indicator"></span>
+            <span>Espace Direction Générale — Mame Diarra Thiam</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicateurs système et horloge Dakar -->
+      <div class="admin-header-center">
+        <div class="system-status-chip">
+          <span class="svg-icon gold" style="width: 14px; height: 14px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </span>
+          <span>Standard Ouest-Foire Connecté (33.844.15.15)</span>
+        </div>
+        <div class="system-time-chip" id="admin-live-clock">
+          Dakar : --:--:--
+        </div>
+      </div>
+
+      <!-- Actions rapides & Retour boutique -->
+      <div class="admin-header-actions">
+        <button type="button" class="btn-demo-inject" id="btn-inject-demo-order">
+          <span class="svg-icon gold" style="width: 15px; height: 15px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </span>
+          <span>Simuler une Commande Live</span>
+        </button>
+
+        <a href="index.html" class="btn-back-store" title="Voir la boutique telle que vue par les clientes">
+          <span class="svg-icon white" style="width: 14px; height: 14px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </span>
+          <span>Vue Boutique Cliente</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       CONTENU DU TABLEAU DE BORD (DASHBOARD)
+       ========================================================================== -->
+  <main class="admin-main-area">
+    <div class="admin-dashboard-container">
+
+      <!-- ======================================================================
+           SECTION 1 : LES 4 INDICATEURS CLÉS (KPIS EN TEMPS RÉEL)
+           ====================================================================== -->
+      <section class="admin-kpi-grid">
+        
+        <!-- KPI 1 : Chiffre d'Affaires du Jour -->
+        <div class="kpi-card revenue-card">
+          <div class="kpi-top-row">
+            <span class="kpi-label">Chiffre d'Affaires du Jour</span>
+            <div class="kpi-icon-wrap gold">
+              <span class="svg-icon gold" style="width: 20px; height: 20px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="kpi-main-val" id="kpi-revenue-val">845.000 FCFA</div>
+          <div class="kpi-sub-badge positive">
+            <span class="svg-icon" style="width: 12px; height: 12px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15"></polyline>
+              </svg>
+            </span>
+            <span>+24% vs hier à la même heure</span>
+          </div>
+        </div>
+
+        <!-- KPI 2 : Commandes Reçues -->
+        <div class="kpi-card">
+          <div class="kpi-top-row">
+            <span class="kpi-label">Commandes du Jour</span>
+            <div class="kpi-icon-wrap pink">
+              <span class="svg-icon pink" style="width: 20px; height: 20px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="kpi-main-val" id="kpi-orders-count">34</div>
+          <div class="kpi-sub-text">
+            <span>Panier moyen : <strong>24.850 FCFA</strong></span>
+          </div>
+        </div>
+
+        <!-- KPI 3 : Modes d'Encaissement -->
+        <div class="kpi-card">
+          <div class="kpi-top-row">
+            <span class="kpi-label">Répartition des Encaissements</span>
+            <div class="kpi-icon-wrap">
+              <span class="svg-icon" style="width: 20px; height: 20px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="payment-ratio-bars">
+            <div class="ratio-item">
+              <span class="ratio-label" style="display: flex; align-items: center; gap: 6px;">
+                <img src="assets/images/wave_official_icon.png" alt="Wave" width="16" height="16" style="border-radius: 4px;">
+                <span>Wave Business (68%)</span>
+              </span>
+              <div class="ratio-bar-track"><div class="ratio-bar-fill wave" style="width: 68%;"></div></div>
+            </div>
+            <div class="ratio-item">
+              <span class="ratio-label" style="display: flex; align-items: center; gap: 6px;">
+                <img src="assets/images/orange_money_official_icon.png" alt="Orange Money" width="16" height="16" style="border-radius: 4px;">
+                <span>Orange Money (22%)</span>
+              </span>
+              <div class="ratio-bar-track"><div class="ratio-bar-fill om" style="width: 22%;"></div></div>
+            </div>
+            <div class="ratio-item">
+              <span class="ratio-label" style="display: flex; align-items: center; gap: 6px;">
+                <span class="svg-icon" style="width: 14px; height: 14px; color: #27AE60;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </span>
+                <span>Espèces Livraison (10%)</span>
+              </span>
+              <div class="ratio-bar-track"><div class="ratio-bar-fill cash" style="width: 10%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPI 4 : Logistique & Livraisons Actives -->
+        <div class="kpi-card">
+          <div class="kpi-top-row">
+            <span class="kpi-label">Courses Tiak-Tiak & Expéditions</span>
+            <div class="kpi-icon-wrap emerald">
+              <span class="svg-icon emerald" style="width: 20px; height: 20px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="3" width="15" height="13"></rect>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+                  <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                  <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="kpi-main-val" id="kpi-deliveries-val">12 en cours</div>
+          <div class="kpi-sub-text">
+            <span>Dakar : 8 • Régions : 3 • DHL : 1</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ======================================================================
+           SECTION 2 : TABLEAU DE PILOTAGE DES COMMANDES DU JOUR
+           ====================================================================== -->
+      <section class="admin-table-section">
+        
+        <div class="admin-table-header-bar">
+          <div>
+            <h3 class="admin-section-heading">Flux des Commandes en Direct</h3>
+            <p class="admin-section-sub">Mise à jour instantanée des commandes transmises via WhatsApp et Checkout.</p>
+          </div>
+
+          <!-- Filtres de statut -->
+          <div class="admin-filter-tabs" id="admin-status-filters">
+            <button type="button" class="admin-filter-pill active" data-filter="all">Toutes (34)</button>
+            <button type="button" class="admin-filter-pill" data-filter="En préparation">En préparation</button>
+            <button type="button" class="admin-filter-pill" data-filter="Remis au coursier">En livraison Tiak-Tiak</button>
+            <button type="button" class="admin-filter-pill" data-filter="Livré & Encaissé">Livrées</button>
+          </div>
+        </div>
+
+        <!-- Tableau des commandes -->
+        <div class="admin-table-responsive">
+          <table class="admin-orders-table">
+            <thead>
+              <tr>
+                <th>Réf. Commande</th>
+                <th>Heure</th>
+                <th>Cliente & Contact</th>
+                <th>Zone de Livraison</th>
+                <th>Soins Commandés</th>
+                <th>Règlement</th>
+                <th>Montant</th>
+                <th>Statut Livraison</th>
+                <th>Actions Coursier</th>
+              </tr>
+            </thead>
+            <tbody id="admin-orders-tbody">
+              <!-- Rendu dynamique par JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+
+      <!-- ======================================================================
+           SECTION 3 : GRILLE DOUBLE (TOP 5 BESTSELLERS & SYNTHÈSE DES PÔLES)
+           ====================================================================== -->
+      <section class="admin-double-grid">
+        
+        <!-- Widget 1 : Top 5 Soins les Plus Vendus -->
+        <div class="admin-widget-card">
+          <div class="widget-header">
+            <h4 class="widget-title">Top 5 Bestsellers du Mois</h4>
+            <span class="widget-badge">Rotation Stocks</span>
+          </div>
+          <div class="bestsellers-list">
+            
+            <div class="bestseller-item">
+              <div class="bestseller-rank">1</div>
+              <img src="assets/images/produits/lait_teint_noir.jpg" alt="Lait Teint Noir" class="bestseller-thumb">
+              <div class="bestseller-info">
+                <strong>Lait Teint Noir (GM)</strong>
+                <span>Gamme Black Skin • Format 500ml</span>
+              </div>
+              <div class="bestseller-stats">
+                <div class="bestseller-volume">182 vendus</div>
+                <div class="bestseller-revenue">2.730.000 FCFA</div>
+              </div>
+            </div>
+
+            <div class="bestseller-item">
+              <div class="bestseller-rank">2</div>
+              <img src="assets/images/produits/lait_collagene.jpg" alt="Lait Collagène" class="bestseller-thumb">
+              <div class="bestseller-info">
+                <strong>Lait Collagène (GM)</strong>
+                <span>Gamme Collagène Kiné Ndiaye</span>
+              </div>
+              <div class="bestseller-stats">
+                <div class="bestseller-volume">145 vendus</div>
+                <div class="bestseller-revenue">2.900.000 FCFA</div>
+              </div>
+            </div>
+
+            <div class="bestseller-item">
+              <div class="bestseller-rank">3</div>
+              <img src="assets/images/produits/savon_teint_noir.jpg" alt="Savon Teint Noir" class="bestseller-thumb">
+              <div class="bestseller-info">
+                <strong>Savon Teint Noir Ébène</strong>
+                <span>Soin lavant éclat douceur</span>
+              </div>
+              <div class="bestseller-stats">
+                <div class="bestseller-volume">128 vendus</div>
+                <div class="bestseller-revenue">512.000 FCFA</div>
+              </div>
+            </div>
+
+            <div class="bestseller-item">
+              <div class="bestseller-rank">4</div>
+              <img src="assets/images/produits/gommage_vitc_300g.jpg" alt="Gommage VitC" class="bestseller-thumb">
+              <div class="bestseller-info">
+                <strong>Gommage VitC (300g)</strong>
+                <span>Exfoliation éclat vitaminée</span>
+              </div>
+              <div class="bestseller-stats">
+                <div class="bestseller-volume">94 vendus</div>
+                <div class="bestseller-revenue">752.000 FCFA</div>
+              </div>
+            </div>
+
+            <div class="bestseller-item">
+              <div class="bestseller-rank">5</div>
+              <img src="assets/images/produits/gel_caramel.jpg" alt="Gel Caramel" class="bestseller-thumb">
+              <div class="bestseller-info">
+                <strong>Gel Douche Caramel</strong>
+                <span>Nettoyant satiné marron chaud</span>
+              </div>
+              <div class="bestseller-stats">
+                <div class="bestseller-volume">88 vendus</div>
+                <div class="bestseller-revenue">440.000 FCFA</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Widget 2 : Synthèse Logistique & Rendez-vous Institut -->
+        <div class="admin-widget-card">
+          <div class="widget-header">
+            <h4 class="widget-title">Activité des Pôles Ouest-Foire</h4>
+            <span class="widget-badge">Direct Salon</span>
+          </div>
+
+          <div class="poles-summary-box">
+            <div class="pole-summary-item">
+              <div class="pole-icon">
+                <span class="svg-icon pink" style="width: 18px; height: 18px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </span>
+              </div>
+              <div class="pole-content">
+                <strong>Rendez-vous en Cabine Aujourd'hui : 6 séances</strong>
+                <p>3 Rituels Coup d'Éclat, 2 Traitements Quintos, 1 Soin Mariée</p>
+              </div>
+              <span class="status-pill active">Complet</span>
+            </div>
+
+            <div class="pole-summary-item">
+              <div class="pole-icon">
+                <span class="svg-icon gold" style="width: 18px; height: 18px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="pole-content">
+                <strong>Centre d'Appels & Téléconseil : 42 appels traités</strong>
+                <p>Conseillères actives sur le standard 33.844.15.15</p>
+              </div>
+              <span class="status-pill active">En ligne</span>
+            </div>
+
+            <div class="pole-summary-item">
+              <div class="pole-icon">
+                <span class="svg-icon emerald" style="width: 18px; height: 18px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                  </svg>
+                </span>
+              </div>
+              <div class="pole-content">
+                <strong>Flotte de Coursiers Tiak-Tiak Déployée : 4 livreurs</strong>
+                <p>Zones couvertes : Almadies, Ouest-Foire, Plateau, Banlieue</p>
+              </div>
+              <span class="status-pill active">Opérationnel</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; text-align: center;">
+            <button type="button" class="btn-primary-luxury" style="padding: 0.85rem 1.75rem; font-size: 0.85rem;" onclick="window.adminApp.exportDeliveriesSheet()">
+              <span class="svg-icon white" style="width: 15px; height: 15px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </span>
+              <span>Générer la Feuille de Route Coursiers (PDF / Impression)</span>
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="data/produits_diodio.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

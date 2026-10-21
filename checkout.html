@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalisation de Commande & Livraison — Maison Diodio Glow Skin Dakar</title>
+  <meta name="description" content="Finalisez votre commande de soins Maison Diodio Glow Skin. Livraison express par coursier Tiak-Tiak à Dakar, expédition dans toutes les régions du Sénégal et par DHL Express à l'international. Paiement Wave Business et Orange Money.">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Polices Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feuilles de styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="checkout-page-body">
+
+  <!-- ==========================================================================
+       BARRE D'ANNONCE SUPÉRIEURE
+       ========================================================================== -->
+  <aside class="top-bar" aria-label="Informations de commande">
+    <div class="top-bar-inner">
+      <div class="top-bar-item">
+        <span class="svg-icon gold">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+        </span>
+        <span>Livraison express à Dakar en 2h & Expédition sécurisée Régions / DHL</span>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-bar-item" style="display: flex; align-items: center; gap: 8px;">
+          <img src="assets/images/wave_official_icon.png" alt="Wave" width="18" height="18" style="border-radius: 4px; object-fit: contain;">
+          <img src="assets/images/orange_money_official_icon.png" alt="Orange Money" width="18" height="18" style="border-radius: 4px; object-fit: contain;">
+          <span>Paiements certifiés Wave Business & Orange Money</span>
+        </div>
+
+        <a href="tel:338441515" class="top-bar-link">
+          <span class="svg-icon gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </span>
+          <span>Standard : 33.844.15.15</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       EN-TÊTE PRINCIPAL (STICKY HEADER)
+       ========================================================================== -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo-link" aria-label="Maison Diodio Glow Skin - Retour à l'accueil">
+        <div class="brand-logo-badge">
+          <img src="assets/images/logo.jpg" alt="Logo officiel Maison Diodio Glow Skin" width="48" height="48">
+        </div>
+        <div class="brand-name-group">
+          <span class="brand-title">Diodio <span>Glow Skin</span></span>
+          <span class="brand-subtitle">Maison de Beauté Dakar</span>
+        </div>
+      </a>
+
+      <!-- Menu de Navigation Multi-Pages -->
+      <nav class="nav-menu-wrapper" aria-label="Navigation principale">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="catalogue.html" class="nav-link">Boutique & Soins</a></li>
+          <li><a href="egeries.html" class="nav-link">Nos Égéries</a></li>
+          <li><a href="institut.html" class="nav-link">L'Institut</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="catalogue.html" class="btn-secondary-luxury" style="padding: 0.65rem 1.25rem; font-size: 0.8125rem;">
+          <span class="svg-icon gold" style="width: 14px; height: 14px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </span>
+          <span>Continuer mes achats</span>
+        </a>
+
+        <button type="button" class="icon-button" id="cart-drawer-trigger" aria-label="Ouvrir le panier">
+          <span class="svg-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </span>
+          <span class="badge-count cart-count" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION TUNNEL DE COMMANDE (CHECKOUT)
+       ========================================================================== -->
+  <main class="checkout-main-area">
+    <div class="checkout-container">
+      
+      <!-- Fil d'ariane & progression -->
+      <div class="checkout-progress-bar">
+        <div class="checkout-step completed">
+          <span class="step-num">
+            <span class="svg-icon gold" style="width: 14px; height: 14px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
+          </span>
+          <span class="step-label">Panier de Soins</span>
+        </div>
+        <div class="step-divider active"></div>
+        <div class="checkout-step active">
+          <span class="step-num">2</span>
+          <span class="step-label">Livraison & Coordonnées</span>
+        </div>
+        <div class="step-divider"></div>
+        <div class="checkout-step">
+          <span class="step-num">3</span>
+          <span class="step-label">Règlement & Validation</span>
+        </div>
+      </div>
+
+      <div class="checkout-grid-layout">
+        
+        <!-- ====================================================================
+             COLONNE GAUCHE : COORDONNÉES, LIVRAISON & PAIEMENT
+             ==================================================================== -->
+        <div class="checkout-form-col">
+          <form id="checkout-form" class="checkout-form-wrapper">
+
+            <!-- ÉTAPE 1 : COORDONNÉES -->
+            <section class="checkout-card-section">
+              <div class="checkout-card-header">
+                <span class="checkout-step-badge">1</span>
+                <div>
+                  <h3 class="checkout-section-title">Coordonnées de Réception</h3>
+                  <p class="checkout-section-desc">Renseignez votre nom et votre numéro WhatsApp pour le suivi du coursier.</p>
+                </div>
+              </div>
+
+              <div class="checkout-fields-row">
+                <div class="form-group">
+                  <label for="order-fullname" class="form-label-custom">Nom complet & Prénom *</label>
+                  <input type="text" id="order-fullname" class="form-control-custom" placeholder="Ex: Aïssatou Diop" required>
+                </div>
+                <div class="form-group">
+                  <label for="order-phone" class="form-label-custom">Numéro de téléphone (WhatsApp actif) *</label>
+                  <input type="tel" id="order-phone" class="form-control-custom" placeholder="Ex: 77 123 45 67" required>
+                </div>
+              </div>
+
+              <div class="checkout-fields-row">
+                <div class="form-group">
+                  <label for="order-phone-alt" class="form-label-custom">Numéro alternatif (Optionnel)</label>
+                  <input type="tel" id="order-phone-alt" class="form-control-custom" placeholder="Ex: 78 987 65 43">
+                </div>
+                <div class="form-group">
+                  <label for="order-email" class="form-label-custom">Adresse e-mail (Optionnelle pour reçu)</label>
+                  <input type="email" id="order-email" class="form-control-custom" placeholder="votre.email@exemple.com">
+                </div>
+              </div>
+            </section>
+
+            <!-- ÉTAPE 2 : MODE DE LIVRAISON & GÉOLOCALISATION -->
+            <section class="checkout-card-section">
+              <div class="checkout-card-header">
+                <span class="checkout-step-badge">2</span>
+                <div>
+                  <h3 class="checkout-section-title">Mode & Zone de Livraison</h3>
+                  <p class="checkout-section-desc">Sélectionnez votre localité pour le calcul instantané des frais de port.</p>
+                </div>
+              </div>
+
+              <!-- Cartes de sélection de zone de livraison -->
+              <div class="delivery-zones-grid">
+                
+                <label class="delivery-zone-card active" data-zone="dakar_centre" data-fee="1500">
+                  <input type="radio" name="delivery_zone" value="dakar_centre" checked>
+                  <div class="zone-card-content">
+                    <div class="zone-card-top">
+                      <span class="zone-name">Dakar Zone 1 — Proximité & Centre</span>
+                      <span class="zone-price">1.500 FCFA</span>
+                    </div>
+                    <p class="zone-desc">Ouest-Foire, Yoff, Almadies, Ngor, Mermoz, Sacré-Cœur, Fann, Point E...</p>
+                    <div class="zone-badge">
+                      <span class="svg-icon gold" style="width: 13px; height: 13px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                      </span>
+                      <span>Livraison Tiak-Tiak Express en 2h</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="delivery-zone-card" data-zone="dakar_periph" data-fee="2500">
+                  <input type="radio" name="delivery_zone" value="dakar_periph">
+                  <div class="zone-card-content">
+                    <div class="zone-card-top">
+                      <span class="zone-name">Dakar Zone 2 — Périphérie & Banlieue</span>
+                      <span class="zone-price">2.500 FCFA</span>
+                    </div>
+                    <p class="zone-desc">Plateau, Médina, Guédiawaye, Pikine, Parcelles Assainies, Keur Massar, Rufisque...</p>
+                    <div class="zone-badge">
+                      <span class="svg-icon gold" style="width: 13px; height: 13px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                      </span>
+                      <span>Livraison Coursier même jour</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="delivery-zone-card" data-zone="regions" data-fee="3000">
+                  <input type="radio" name="delivery_zone" value="regions">
+                  <div class="zone-card-content">
+                    <div class="zone-card-top">
+                      <span class="zone-name">Régions du Sénégal</span>
+                      <span class="zone-price">3.000 FCFA</span>
+                    </div>
+                    <p class="zone-desc">Thiès, Mbour, Saint-Louis, Touba, Kaolack, Ziguinchor, Tambacounda...</p>
+                    <div class="zone-badge">
+                      <span class="svg-icon gold" style="width: 13px; height: 13px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect x="1" y="3" width="15" height="13"></rect>
+                          <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+                          <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                          <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                      </span>
+                      <span>Expédition sécurisée sous 24h / 48h</span>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="delivery-zone-card" data-zone="international" data-fee="0">
+                  <input type="radio" name="delivery_zone" value="international">
+                  <div class="zone-card-content">
+                    <div class="zone-card-top">
+                      <span class="zone-name">International (DHL Express)</span>
+                      <span class="zone-price">Sur Devis Direct</span>
+                    </div>
+                    <p class="zone-desc">France, Côte d'Ivoire, USA, Canada, Gabon, Mali, Europe & Monde entier...</p>
+                    <div class="zone-badge">
+                      <span class="svg-icon gold" style="width: 13px; height: 13px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <line x1="2" y1="12" x2="22" y2="12"></line>
+                          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                      </span>
+                      <span>Calcul au poids avec numéro de suivi DHL</span>
+                    </div>
+                  </div>
+                </label>
+
+              </div>
+
+              <!-- Champs d'adresse détaillée -->
+              <div class="form-group" style="margin-top: 1.25rem;">
+                <label for="order-address" class="form-label-custom">Adresse complète & Point de repère *</label>
+                <input type="text" id="order-address" class="form-control-custom" placeholder="Ex: Ouest-Foire, 2e rue après la brioche dorée, Immeuble Rose, 2e étage" required>
+              </div>
+
+              <div class="form-group" style="margin-top: 1rem;">
+                <label for="order-notes" class="form-label-custom">Consignes pour le livreur (Optionnel)</label>
+                <textarea id="order-notes" class="form-control-custom" rows="2" placeholder="Ex: Appeler dès votre arrivée à la station, colis fragile..."></textarea>
+              </div>
+            </section>
+
+            <!-- ÉTAPE 3 : MODE DE PAIEMENT SÉNÉGALAIS -->
+            <section class="checkout-card-section">
+              <div class="checkout-card-header">
+                <span class="checkout-step-badge">3</span>
+                <div>
+                  <h3 class="checkout-section-title">Mode de Règlement</h3>
+                  <p class="checkout-section-desc">Paiement certifié direct sans frais supplémentaires.</p>
+                </div>
+              </div>
+
+              <div class="payment-methods-grid">
+                
+                <label class="payment-method-card active" data-method="wave">
+                  <input type="radio" name="payment_method" value="Wave Business" checked>
+                  <div class="payment-method-inner">
+                    <div class="payment-card-badge" style="background: transparent; border: none; box-shadow: none;">
+                      <img src="assets/images/wave_official_icon.png" alt="Logo officiel Wave Business" width="46" height="46" style="border-radius: 12px; display: block; object-fit: contain;">
+                    </div>
+                    <div class="payment-card-info">
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <strong style="font-size: 1rem;">Wave Business</strong>
+                        <span style="background: #1AA3FF; color: #fff; font-size: 0.65rem; font-weight: 700; padding: 2px 7px; border-radius: 10px;">Officiel</span>
+                      </div>
+                      <span>Compte Marchand : <em>Diodio GLOW Skin</em></span>
+                      <small style="color: #0099FF; font-weight: 600; display: block; margin-top: 0.25rem;">0% de frais de transfert Wave</small>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="payment-method-card" data-method="orange_money">
+                  <input type="radio" name="payment_method" value="Orange Money">
+                  <div class="payment-method-inner">
+                    <div class="payment-card-badge" style="background: transparent; border: none; box-shadow: none;">
+                      <img src="assets/images/orange_money_official_icon.png" alt="Logo officiel Orange Money" width="46" height="46" style="border-radius: 12px; display: block; object-fit: contain;">
+                    </div>
+                    <div class="payment-card-info">
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <strong style="font-size: 1rem;">Orange Money</strong>
+                        <span style="background: #FF7900; color: #fff; font-size: 0.65rem; font-weight: 700; padding: 2px 7px; border-radius: 10px;">Officiel</span>
+                      </div>
+                      <span>Numéro Marchand : <em>+221 78 451 09 09</em></span>
+                      <small style="color: #FF7900; font-weight: 600; display: block; margin-top: 0.25rem;">Validation instantanée par SMS</small>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="payment-method-card" data-method="cash_delivery">
+                  <input type="radio" name="payment_method" value="Paiement à la livraison">
+                  <div class="payment-method-inner">
+                    <div class="payment-card-badge">
+                      <span class="svg-icon gold" style="width: 18px; height: 18px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="12" y1="1" x2="12" y2="23"></line>
+                          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="payment-card-info">
+                      <strong>Espèces à la Livraison</strong>
+                      <span>Paiement en mains propres au coursier</span>
+                      <small style="color: var(--color-dark-muted); display: block; margin-top: 0.25rem;">Valable uniquement pour Dakar</small>
+                    </div>
+                  </div>
+                </label>
+
+              </div>
+
+              <!-- Notice explicative du mode de paiement sélectionné -->
+              <div class="payment-instructions-box" id="payment-instructions-box">
+                <div class="instruction-content wave-active">
+                  <span class="svg-icon gold" style="width: 18px; height: 18px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </span>
+                  <div>
+                    <strong>Paiement Wave Business :</strong> Après validation sur WhatsApp, il vous suffira de sélectionner <em>« Paiement Marchand »</em> dans votre application Wave et d'entrer <strong>Diodio GLOW Skin</strong> ou de scanner notre code QR officiel.
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </form>
+        </div>
+
+        <!-- ====================================================================
+             COLONNE DROITE : RÉCAPITULATIF COMMANDE (STICKY SUMMARY)
+             ==================================================================== -->
+        <aside class="checkout-summary-col">
+          <div class="checkout-summary-card">
+            
+            <div class="summary-header">
+              <div class="summary-header-top">
+                <h4 class="summary-card-title">Récapitulatif de Commande</h4>
+                <span class="order-badge-ref" id="order-ref-badge">#DG-2026-....</span>
+              </div>
+              <p class="summary-subtitle">Authenticité 100% certifiée Maison Diodio Glow Skin</p>
+            </div>
+
+            <!-- Liste dynamique des soins du panier -->
+            <div class="summary-items-list" id="checkout-items-list">
+              <!-- Rendu dynamique par JS -->
+            </div>
+
+            <!-- Calculs financiers détaillés -->
+            <div class="summary-calc-box">
+              <div class="calc-row">
+                <span>Sous-total des soins (<strong id="checkout-total-qty">0</strong>)</span>
+                <span id="checkout-subtotal-val">0 FCFA</span>
+              </div>
+              
+              <div class="calc-row">
+                <span>Frais de livraison (<span id="checkout-zone-name">Dakar Zone 1</span>)</span>
+                <span id="checkout-delivery-fee" class="fee-highlight">1.500 FCFA</span>
+              </div>
+
+              <div class="calc-divider"></div>
+
+              <div class="calc-row total-row">
+                <span>Total Général à Régler</span>
+                <span id="checkout-grand-total" class="grand-total-val">0 FCFA</span>
+              </div>
+            </div>
+
+            <!-- Bouton CTA Principal WhatsApp -->
+            <button type="button" class="btn-primary-luxury btn-submit-checkout" id="btn-submit-order">
+              <span class="svg-icon white" style="width: 20px; height: 20px;">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.11 7.44C8.94 7.44 8.68 7.5 8.46 7.74C8.24 7.97 7.62 8.56 7.62 9.77C7.62 10.97 8.5 12.13 8.62 12.29C8.75 12.45 10.3 14.86 12.71 15.86C14.71 16.69 15.12 16.53 15.56 16.49C16 16.45 17 15.9 17.2 15.32C17.41 14.75 17.41 14.26 17.34 14.15C17.28 14.05 17.11 13.99 16.85 13.86C16.6 13.73 15.36 13.12 15.13 13.04C14.9 12.95 14.73 12.91 14.56 13.16C14.39 13.41 13.91 13.99 13.77 14.15C13.62 14.31 13.48 14.33 13.22 14.21C12.97 14.08 12.15 13.81 11.18 12.95C10.43 12.28 9.92 11.45 9.77 11.2C9.62 10.95 9.76 10.81 9.88 10.69C10 10.58 10.14 10.4 10.27 10.25C10.4 10.1 10.44 9.98 10.53 9.82C10.62 9.66 10.57 9.51 10.51 9.38C10.45 9.26 9.96 8.07 9.76 7.57C9.56 7.09 9.35 7.15 9.19 7.15L9.11 7.44Z"/>
+                </svg>
+              </span>
+              <span>Confirmer & Valider sur WhatsApp</span>
+            </button>
+
+            <!-- Réassurance sécurisée -->
+            <div class="summary-reassurance-list">
+              <div class="reassurance-row">
+                <span class="svg-icon gold" style="width: 15px; height: 15px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </span>
+                <span>Paiement marchand vérifié sans commission</span>
+              </div>
+              <div class="reassurance-row">
+                <span class="svg-icon gold" style="width: 15px; height: 15px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                  </svg>
+                </span>
+                <span>Colis préparé avec soin à Ouest-Foire</span>
+              </div>
+              <div class="reassurance-row">
+                <span class="svg-icon gold" style="width: 15px; height: 15px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </span>
+                <span>Assistance directe au 33.844.15.15</span>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       PIED DE PAGE LUXE (FOOTER)
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-col brand-col">
+          <div class="brand-name-group">
+            <span class="brand-title">Diodio <span>Glow Skin</span></span>
+            <span class="brand-subtitle">Maison de Beauté Dakar</span>
+          </div>
+          <p class="footer-desc">
+            Révélez l'éclat royal de votre peau grâce à nos 12 rituels dermatologiques d'exception. Formules sur-mesure pour sublimer chaque carnation.
+          </p>
+          <div class="footer-certif-pill">
+            <span class="svg-icon gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </span>
+            <span>100% Formules Authentiques Créées par Mame Diarra Thiam</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#diagnostic">Diagnostic Carnation</a></li>
+            <li><a href="catalogue.html">Boutique & 121 Soins</a></li>
+            <li><a href="egeries.html">Nos Égéries</a></li>
+            <li><a href="institut.html">L'Institut & Équipe</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Paiement & Sécurité</h4>
+          <ul class="footer-links-list">
+            <li><span>Wave Business : Diodio GLOW Skin</span></li>
+            <li><span>Orange Money : +221 78 451 09 09</span></li>
+            <li><span>Paiement à la livraison (Dakar)</span></li>
+            <li><span>Livraison Tiak-Tiak en 2h</span></li>
+            <li><span>Expédition DHL International</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Maison & Institut</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-row">
+              <span class="svg-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              <span>Ouest-Foire, à côté de la station Elton (VDN), Dakar</span>
+            </div>
+            <div class="footer-contact-row">
+              <span class="svg-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </span>
+              <span>Standard : <strong>33.844.15.15</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Maison Diodio Glow Skin. Tous droits réservés. Dakar, Sénégal.</p>
+        <div class="footer-bottom-links" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <img src="assets/images/wave_official_icon.png" alt="Wave" width="18" height="18" style="border-radius: 4px; object-fit: contain;">
+          <img src="assets/images/orange_money_official_icon.png" alt="Orange Money" width="18" height="18" style="border-radius: 4px; object-fit: contain;">
+          <span>Paiements certifiés Wave Business & Orange Money</span>
+          <a href="admin.html" style="color: var(--color-gold); font-size: 0.775rem; text-decoration: none; opacity: 0.8; margin-left: 1rem;">Espace Gérante</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       VOLET PANIER LATÉRAL (CART DRAWER PARTAGÉ)
+       ========================================================================== -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Panier de commande">
+    <div class="drawer-header">
+      <h3>
+        <span class="svg-icon pink">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </span>
+        <span>Mon Panier Soins</span>
+      </h3>
+      <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Fermer le panier">
+        <span class="svg-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="drawer-body" id="drawer-body"></div>
+
+    <div class="drawer-footer">
+      <div class="drawer-subtotal">
+        <span>Sous-total estimé</span>
+        <strong id="drawer-subtotal-price">0 FCFA</strong>
+      </div>
+      <a href="checkout.html" class="btn-checkout-drawer" id="btn-checkout-drawer" style="text-decoration: none; text-align: center; justify-content: center;">
+        <span>Finaliser la Commande</span>
+        <span class="svg-icon white">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="data/produits_diodio.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

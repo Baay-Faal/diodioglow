@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Officielle — Maison Diodio Glow Skin (121 Soins & Rituels)</title>
+  <meta name="description" content="Explorez l'intégralité du catalogue Maison Diodio Glow Skin : Laits de corps, gels douche, sérums, gommages et soins spécifiques pour les 12 carnations à Dakar.">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Polices Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feuilles de styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       BARRE D'ANNONCE SUPÉRIEURE
+       ========================================================================== -->
+  <aside class="top-bar" aria-label="Informations de livraison et contact">
+    <div class="top-bar-inner">
+      <div class="top-bar-item">
+        <span class="svg-icon gold">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+        </span>
+        <span>Livraison express à Dakar en 2h & Expédition mondiale DHL</span>
+      </div>
+
+      <div class="top-bar-right">
+        <div class="top-bar-item" style="display: flex; align-items: center; gap: 8px;">
+          <img src="assets/images/wave_official_icon.png" alt="Wave" width="16" height="16" style="border-radius: 4px;">
+          <img src="assets/images/orange_money_official_icon.png" alt="Orange Money" width="16" height="16" style="border-radius: 4px;">
+          <span>Paiements certifiés Wave Business & Orange Money</span>
+        </div>
+
+        <a href="tel:338441515" class="top-bar-link">
+          <span class="svg-icon gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </span>
+          <span>33.844.15.15</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       EN-TÊTE PRINCIPAL (STICKY HEADER)
+       ========================================================================== -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo-link" aria-label="Maison Diodio Glow Skin - Retour à l'accueil">
+        <div class="brand-logo-badge">
+          <img src="assets/images/logo.jpg" alt="Logo officiel Maison Diodio Glow Skin" width="48" height="48">
+        </div>
+        <div class="brand-name-group">
+          <span class="brand-title">Diodio <span>Glow Skin</span></span>
+          <span class="brand-subtitle">Maison de Beauté Dakar</span>
+        </div>
+      </a>
+
+      <!-- Menu de Navigation Multi-Pages -->
+      <nav class="nav-menu-wrapper" aria-label="Navigation principale">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="catalogue.html" class="nav-link active">Boutique & Soins</a></li>
+          <li><a href="egeries.html" class="nav-link">Nos Égéries</a></li>
+          <li><a href="institut.html" class="nav-link">L'Institut</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-button" id="cart-drawer-trigger" aria-label="Ouvrir le panier">
+          <span class="svg-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </span>
+          <span class="badge-count cart-count" style="display: none;">0</span>
+        </button>
+
+        <a href="https://wa.me/221785466969?text=Bonjour%20Maison%20Diodio%20Glow%20Skin,%20je%20souhaite%20commander%20des%20soins." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-header">
+          <span class="svg-icon white">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.11 7.44C8.94 7.44 8.68 7.5 8.46 7.74C8.24 7.97 7.62 8.56 7.62 9.77C7.62 10.97 8.5 12.13 8.62 12.29C8.75 12.45 10.3 14.86 12.71 15.86C14.71 16.69 15.12 16.53 15.56 16.49C16 16.45 17 15.9 17.2 15.32C17.41 14.75 17.41 14.26 17.34 14.15C17.28 14.05 17.11 13.99 16.85 13.86C16.6 13.73 15.36 13.12 15.13 13.04C14.9 12.95 14.73 12.91 14.56 13.16C14.39 13.41 13.91 13.99 13.77 14.15C13.62 14.31 13.48 14.33 13.22 14.21C12.97 14.08 12.15 13.81 11.18 12.95C10.43 12.28 9.92 11.45 9.77 11.2C9.62 10.95 9.76 10.81 9.88 10.69C10 10.58 10.14 10.4 10.27 10.25C10.4 10.1 10.44 9.98 10.53 9.82C10.62 9.66 10.57 9.51 10.51 9.38C10.45 9.26 9.96 8.07 9.76 7.57C9.56 7.09 9.35 7.15 9.19 7.15L9.11 7.44Z"/>
+            </svg>
+          </span>
+          <span>Commander</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HÉRO DU CATALOGUE & MOTEUR DE RECHERCHE
+       ========================================================================== -->
+  <main>
+    <section class="catalogue-hero">
+      <div class="catalogue-hero-inner">
+        <span class="section-tag">
+          <span class="svg-icon" style="width: 14px; height: 14px;">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </span>
+          <span>Catalogue Officiel Dakar</span>
+        </span>
+        <h1 class="catalogue-hero-title">La Boutique — <em>121 Soins d'Exception</em></h1>
+        <p class="catalogue-hero-desc">
+          Filtrez nos formules par catégorie ou carnation. Choisissez votre format (PM / GM) et commandez directement par Wave, Orange Money ou à la livraison à Dakar.
+        </p>
+
+        <!-- Champ de recherche en direct -->
+        <div class="search-input-box">
+          <input type="text" id="catalogue-search-input" placeholder="Rechercher un soin (ex: caramel, collagène, quintos, curcuma...)" aria-label="Rechercher dans le catalogue">
+          <button type="button" class="search-icon-btn" aria-label="Lancer la recherche">
+            <span class="svg-icon white" style="width: 18px; height: 18px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FILTRES CATÉGORIES & CARNATIONS (STICKY)
+         ========================================================================== -->
+    <section class="catalogue-filters-section" aria-label="Filtres du catalogue">
+      <div class="catalogue-filters-container">
+        <!-- Ligne 1 : Onglets Catégories -->
+        <div class="filter-row-categories" id="category-pills-container"></div>
+
+        <!-- Ligne 2 : Puces Carnations -->
+        <div class="filter-row-carnations" id="carnation-chips-container"></div>
+      </div>
+    </section>
+
+    <!-- Barre de Statut & Réinitialisation -->
+    <div class="catalogue-status-bar">
+      <div class="results-count-text" id="results-count">
+        Chargement des soins...
+      </div>
+      <button type="button" class="btn-reset-filters" id="btn-reset-filters">
+        <span class="svg-icon" style="width: 14px; height: 14px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="1 4 1 10 7 10"></polyline>
+            <polyline points="23 20 23 14 17 14"></polyline>
+            <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+          </svg>
+        </span>
+        <span>Réinitialiser les filtres</span>
+      </button>
+    </div>
+
+    <!-- ==========================================================================
+         GRILLE DES PRODUITS DU CATALOGUE
+         ========================================================================== -->
+    <section class="section-py" style="padding-top: 2rem;">
+      <div class="section-container">
+        <div class="products-grid-4" id="catalogue-products-grid">
+          <!-- Injecté dynamiquement par app.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       MODALE DE DÉTAIL DU PRODUIT (« FICHE SOIN »)
+       ========================================================================== -->
+  <div class="modal-overlay" id="product-detail-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Fermer la fiche produit">
+        <span class="svg-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+      </button>
+      <div id="modal-card-body"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PIED DE PAGE LUXE (FOOTER)
+       ========================================================================== -->
+  <footer class="footer-luxury">
+    <div class="footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h3>Diodio <span>Glow Skin</span></h3>
+          <p>
+            Maison de cosmétiques et soins dermatologiques d'exception fondée par Mame Diarra Thiam à Dakar. Révélez la beauté de toutes les carnations.
+          </p>
+          <div style="display: flex; gap: 0.85rem; margin-top: 1rem;">
+            <a href="https://wa.me/221785466969" target="_blank" rel="noopener noreferrer" class="icon-button" style="background: rgba(255,255,255,0.08); color: var(--color-white);" aria-label="WhatsApp">
+              <span class="svg-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.11 7.44C8.94 7.44 8.68 7.5 8.46 7.74C8.24 7.97 7.62 8.56 7.62 9.77C7.62 10.97 8.5 12.13 8.62 12.29C8.75 12.45 10.3 14.86 12.71 15.86C14.71 16.69 15.12 16.53 15.56 16.49C16 16.45 17 15.9 17.2 15.32C17.41 14.75 17.41 14.26 17.34 14.15C17.28 14.05 17.11 13.99 16.85 13.86C16.6 13.73 15.36 13.12 15.13 13.04C14.9 12.95 14.73 12.91 14.56 13.16C14.39 13.41 13.91 13.99 13.77 14.15C13.62 14.31 13.48 14.33 13.22 14.21C12.97 14.08 12.15 13.81 11.18 12.95C10.43 12.28 9.92 11.45 9.77 11.2C9.62 10.95 9.76 10.81 9.88 10.69C10 10.58 10.14 10.4 10.27 10.25C10.4 10.1 10.44 9.98 10.53 9.82C10.62 9.66 10.57 9.51 10.51 9.38C10.45 9.26 9.96 8.07 9.76 7.57C9.56 7.09 9.35 7.15 9.19 7.15L9.11 7.44Z"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#diagnostic">Diagnostic Carnations</a></li>
+            <li><a href="catalogue.html">Boutique & Soins</a></li>
+            <li><a href="egeries.html">Nos Égéries</a></li>
+            <li><a href="institut.html">L'Institut Ouest-Foire</a></li>
+            <li><a href="admin.html">Espace Gérante (Démo)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Nos Gammes Phares</h4>
+          <ul class="footer-nav-list">
+            <li><a href="catalogue.html?carnation=2">Gamme Black Skin</a></li>
+            <li><a href="catalogue.html?carnation=3">Gamme Caramel</a></li>
+            <li><a href="catalogue.html?carnation=5">Gamme Collagène</a></li>
+            <li><a href="catalogue.html?carnation=9">Gamme 3Jours Événement</a></li>
+            <li><a href="catalogue.html?carnation=1">Gamme Golden Men</a></li>
+            <li><a href="catalogue.html?carnation=6">Gamme SuperGlow</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Institut & Standard</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-row">
+              <span class="svg-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              <span>Ouest-Foire, à côté de la station Elton (VDN), Dakar</span>
+            </div>
+            <div class="footer-contact-row">
+              <span class="svg-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </span>
+              <span>Standard : <strong>33.844.15.15</strong></span>
+            </div>
+            <div class="footer-contact-row">
+              <span class="svg-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </span>
+              <span>Lundi au Samedi : 10h00 - 19h00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Maison Diodio Glow Skin. Tous droits réservés. Dakar, Sénégal.</p>
+        <div class="footer-bottom-links" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <img src="assets/images/wave_official_icon.png" alt="Wave" width="16" height="16" style="border-radius: 4px;">
+          <img src="assets/images/orange_money_official_icon.png" alt="Orange Money" width="16" height="16" style="border-radius: 4px;">
+          <span>Paiements certifiés Wave Business & Orange Money</span>
+          <a href="admin.html" style="color: var(--color-gold); font-size: 0.775rem; text-decoration: none; opacity: 0.8; margin-left: 1rem;">Espace Gérante</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       VOLET PANIER LATÉRAL (CART DRAWER PARTAGÉ)
+       ========================================================================== -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Panier de commande">
+    <div class="drawer-header">
+      <h3>
+        <span class="svg-icon pink">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </span>
+        <span>Mon Panier Soins</span>
+      </h3>
+      <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Fermer le panier">
+        <span class="svg-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="drawer-body" id="drawer-body"></div>
+
+    <div class="drawer-footer">
+      <div class="drawer-subtotal">
+        <span>Sous-total estimé</span>
+        <strong id="drawer-subtotal-price">0 FCFA</strong>
+      </div>
+      <a href="checkout.html" class="btn-checkout-drawer" id="btn-checkout-drawer" style="text-decoration: none; text-align: center; justify-content: center;">
+        <span>Finaliser la Commande</span>
+        <span class="svg-icon white">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="data/produits_diodio.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
