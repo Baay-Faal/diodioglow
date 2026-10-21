@@ -2630,22 +2630,32 @@ button {
 .institut-hero-banner {
   position: relative;
   width: 100%;
-  min-height: 480px;
-  background: #14030D;
+  min-height: 580px;
+  background: radial-gradient(circle at 80% 30%, rgba(184, 35, 107, 0.22) 0%, #15030E 65%, #0D0108 100%);
   overflow: hidden;
   display: flex;
   align-items: center;
+  padding: 3.5rem 0;
 }
 
-.institut-hero-bg {
+/* Fond d'ambiance doux */
+.institut-hero-bg-blur {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.institut-hero-bg-blur img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center 25%;
-  opacity: 0.45;
-  filter: contrast(1.05);
+  filter: blur(60px) saturate(1.4);
+  opacity: 0.22;
+  transform: scale(1.15);
 }
 
 .institut-hero-overlay {
@@ -2654,12 +2664,117 @@ button {
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 4.5rem 1.5rem;
+  padding: 0 1.5rem;
   color: var(--color-white);
 }
 
+.institut-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3.5rem;
+}
+
 .institut-hero-content {
-  max-width: 720px;
+  max-width: 640px;
+}
+
+.institut-hero-content .hero-title {
+  color: var(--color-white);
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.2vw, 2.85rem);
+  line-height: 1.18;
+  margin-bottom: 1.25rem;
+}
+
+.institut-hero-content .hero-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-gold);
+}
+
+.institut-hero-content .hero-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.institut-hero-highlights {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.highlight-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 8px rgba(197, 160, 89, 0.6);
+}
+
+/* Colonne Visuelle — Photo Intégrale de l'Équipe */
+.institut-hero-visual-col {
+  display: flex;
+  justify-content: center;
+}
+
+.institut-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid rgba(197, 160, 89, 0.6);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55), 0 0 35px rgba(184, 35, 107, 0.3);
+  background: #1A0512;
+}
+
+.institut-full-team-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.institut-hero-frame:hover .institut-full-team-img {
+  transform: scale(1.02);
+}
+
+.team-badge-overlay {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(20, 3, 13, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-white);
+  font-size: 0.775rem;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .badge-location-pill {
@@ -2976,6 +3091,37 @@ button {
 }
 
 @media (max-width: 992px) {
+  .institut-hero-banner {
+    padding: 2.5rem 0;
+  }
+
+  .institut-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .institut-hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .institut-hero-content .hero-actions {
+    justify-content: center;
+  }
+
+  .institut-hero-highlights {
+    justify-content: center;
+  }
+
+  .badge-location-pill {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .institut-hero-frame {
+    max-width: 440px;
+  }
+
   .poles-grid-3 {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -2999,6 +3145,20 @@ button {
 
   .booking-card {
     padding: 1.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .institut-hero-banner {
+    padding: 2rem 0;
+  }
+
+  .institut-hero-frame {
+    max-width: 100%;
+  }
+
+  .institut-hero-content .hero-title {
+    font-size: 1.75rem;
   }
 }
 
