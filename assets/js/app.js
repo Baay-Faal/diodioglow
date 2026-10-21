@@ -1723,10 +1723,63 @@ function initAdminDashboard() {
   renderOrdersTable();
 }
 
-// Initialisation globale
+// Gestion du Menu Mobile (Navigation Tiroir Responsive)
+function initMobileNav() {
+  const triggerBtn = document.getElementById('mobile-menu-trigger');
+  const drawer = document.getElementById('mobile-nav-drawer');
+  const overlay = document.getElementById('mobile-nav-overlay');
+  const closeBtn = document.getElementById('mobile-nav-close');
 
+  if (!triggerBtn || !drawer || !overlay) return;
+
+  function openMenu() {
+    drawer.classList.add('active');
+    overlay.classList.add('active');
+    triggerBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    drawer.classList.remove('active');
+    overlay.classList.remove('active');
+    triggerBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  triggerBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (drawer.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeMenu();
+    });
+  }
+
+  overlay.addEventListener('click', closeMenu);
+
+  const navLinks = drawer.querySelectorAll('.mobile-nav-links a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+}
+
+// Initialisation globale
 document.addEventListener('DOMContentLoaded', () => {
   window.cartApp = new CartManager();
+  initMobileNav();
   initDiagnostic();
   initCatalogue();
   initEgeriesSlider();
