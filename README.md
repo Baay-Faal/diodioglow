@@ -66,3 +66,8 @@ npx serve .
 * **Standard Téléphonique :** +221 33 844 15 15
 * **Commandes WhatsApp Dakar :** +221 78 546 69 69
 * **Service Régions & International :** +221 77 778 43 43
+---
+
+<p align="center">
+  <strong>dev by &lt;/Baay_Hacker&gt;</strong>
+</p>
