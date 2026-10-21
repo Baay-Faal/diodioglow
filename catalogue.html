@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Feuilles de styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.2">
 </head>
 <body>
 
@@ -80,7 +80,7 @@
 
       <div class="header-actions">
         <!-- Bouton Menu Mobile (Hamburger) -->
-        <button type="button" class="mobile-menu-btn" id="mobile-menu-trigger" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-trigger" onclick="window.toggleMobileNav(event)" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="mobile-nav-drawer">
           <span class="svg-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -300,14 +300,14 @@
     <!-- ==========================================================================
        VOLET MENU MOBILE (TIROIR COULISSANT)
        ========================================================================== -->
-  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay" onclick="window.closeMobileNav(event)"></div>
   <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Menu principal mobile">
     <div class="mobile-nav-header">
       <a href="index.html" class="mobile-nav-brand">
         <img src="assets/images/logo.jpg" alt="Logo Maison Diodio Glow Skin" width="38" height="38">
         <strong>Diodio Glow Skin</strong>
       </a>
-      <button type="button" class="drawer-close-btn" id="mobile-nav-close" aria-label="Fermer le menu mobile">
+      <button type="button" class="drawer-close-btn" id="mobile-nav-close" onclick="window.closeMobileNav(event)" aria-label="Fermer le menu mobile">
         <span class="svg-icon" style="width: 16px; height: 16px;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -385,6 +385,6 @@
 
   <!-- Scripts -->
   <script src="data/produits_diodio.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app.js?v=2.2"></script>
 </body>
 </html>

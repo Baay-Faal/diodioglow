@@ -378,9 +378,19 @@ button {
   box-shadow: var(--shadow-sm);
   cursor: pointer;
   transition: all var(--transition-fast);
+  position: relative;
+  z-index: 101;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
-.mobile-menu-btn:hover {
+.mobile-menu-btn * {
+  pointer-events: none;
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn:active {
   background: var(--color-soft-pink);
   color: var(--color-primary);
   border-color: var(--color-primary);
